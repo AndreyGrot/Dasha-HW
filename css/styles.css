@@ -1,0 +1,94 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --logo-color: #2196f3;
+  --header-background-color: #ffffff;
+}
+
+/*сбросить точки в списках*/
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+body {
+  font-family: roboto, raleway sans-serif;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--benefits-background-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/*ХЕДЕР*/
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  background-color: var(--header-background-color);
+  text-align: center;
+}
+
+.header-nav {
+  align-items: center;
+  color: #ec1cd7;
+  text-align: center;
+}
+
+/*таблица*/
+
+.table-list {
+  display: flex;
+  border: 1px solid #bb5353;
+}
+
+.table-list .item {
+  text-align: center;
+}
+
+.table-list .item:last-child {
+  text-align: center;
+  border-left: 1px solid #bb5353;
+}
