@@ -1,8 +1,9 @@
+/*палитра цветов*/
 :root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --logo-color: #2196f3;
-  --header-background-color: #ffffff;
+  --header-text: #ec1cd7;
+  --table-border: #bb5353;
+  --list-text: #000000;
+  --skills: #266d2c;
 }
 
 /*сбросить точки в списках*/
@@ -15,26 +16,12 @@
 body {
   font-family: roboto, raleway sans-serif;
   letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-  background-color: var(--benefits-background-color);
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 img {
   display: block;
   height: auto;
   max-width: 100%;
-}
-
-svg {
-  fill: currentColor;
 }
 
 .visually-hidden {
@@ -67,13 +54,11 @@ svg {
 
 .page-header {
   border-bottom: 1px solid #ececec;
-  background-color: var(--header-background-color);
   text-align: center;
 }
 
 .header-nav {
-  align-items: center;
-  color: #ec1cd7;
+  color: var(--header-text);
   text-align: center;
 }
 
@@ -81,14 +66,36 @@ svg {
 
 .table-list {
   display: flex;
-  border: 1px solid #bb5353;
+  border: 1px solid var(--table-border);
 }
 
-.table-list .item {
+.table-list--item {
   text-align: center;
+  padding: 20px;
 }
 
-.table-list .item:last-child {
+.table-list--item:first-child {
+  max-width: 585px;
+}
+
+.table-list--item:last-child {
   text-align: center;
-  border-left: 1px solid #bb5353;
+  border-left: 1px solid var(--table-border);
+  width: 585px;
+}
+
+.title {
+  display: block;
+  text-transform: uppercase;
+}
+
+.text {
+  display: block;
+  line-height: 1;
+
+  color: var(--list-text);
+}
+
+.skills {
+  color: var(--skills);
 }
